@@ -1,14 +1,12 @@
 # PatchNR: Learning from Small Data by Patch Normalizing Flow Regularization
 
-This code belongs to the paper [1]. Please cite the paper, if you use this code.
-
-The paper [1] is available at...
+This code belongs to the paper [1] available at https://arxiv.org/abs/2205.12021. Please cite the paper, if you use this code.
 
 The repository contains an implementation of patchNRs and cPatchNRs as introduced in [1]. It contains scripts for reproducing the numerical example Superresolution in Section 5.1, CT imaging in Section 5.2 and Deblurring in Section 5.3.
 
 The folder `input_imgs` contains the images for learn the patchNR and cPatchNR, a validation image and the test image illustrated in the paper.
 
-For questions and bug reports, please contact Fabian Altekrueger (fabian.altekrueger@hu-berlin.de), Alexander Denker (adenker@uni-bremen.de) or Paul Hagemann (hagemann@math.tu-berlin.de).
+For questions and bug reports, please contact Fabian Altekrüger (fabian.altekrueger@hu-berlin.de), Alexander Denker (adenker@uni-bremen.de) or Paul Hagemann (hagemann@math.tu-berlin.de).
 
 ## CONTENTS
 
@@ -49,9 +47,9 @@ The scripts `patchNR_deblurring.py` and `cPatchNR_deblurring` are implementation
 
 ## 3. REFERENCES
 
-[1] F. Alteküger, A. Denker, P. Hagemann, J. Hertrich, P. Maass and G. Steidl.  
+[1] F. Altekrüger, A. Denker, P. Hagemann, J. Hertrich, P. Maass and G. Steidl.  
 PatchNR: Learning from Small Data by Patch Normalizing Flow Regularization.   
-ArXiv Preprint#xxxx.xxxxx
+ArXiv Preprint#2205.12021
 
 [2] G. Kylberg.  
 The Kylberg texture dataset v. 1.0.  
