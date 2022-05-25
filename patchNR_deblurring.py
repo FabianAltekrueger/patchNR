@@ -2,7 +2,7 @@
 #
 # F. Alteküger, A. Denker, P. Hagemann, J. Hertrich, P. Maass and G. Steidl.
 # PatchNR: Learning from Small Data by Patch Normalizing Flow Regularization
-# ArXiv Preprint#xxxx.xxxxx
+# ArXiv Preprint#2205.12021
 #
 # Please cite the paper, if you use the code.
 #
