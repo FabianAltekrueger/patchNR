@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
     lam = 0.15
     n_pat = 130000
-    iteration = 500
+    iteration = 300
     rec = patchNR(lr,lam = lam, patch_size = patch_size, n_patches_out = n_pat,
                   patchNR = net, n_iter_max = iteration)
     utils.save_img(rec,'results/patchNR_material')
