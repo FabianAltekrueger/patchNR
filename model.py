@@ -37,28 +37,4 @@ def create_NF(num_layers, sub_net_size, dimension):
     model = Ff.ReversibleGraphNet(nodes, verbose=False).to(DEVICE)
     return model
 
-def create_cNF(num_layers, sub_net_size, dimension, dimension_condition):
-    """
-    Creates the cPatchNR network
-    """
-    def subnet_fc(c_in, c_out):
-        return nn.Sequential(nn.Linear(c_in, sub_net_size), nn.ReLU(),
-                             nn.Linear(sub_net_size, sub_net_size), nn.ReLU(),
-                             nn.Linear(sub_net_size,  c_out))
-    nodes = [Ff.InputNode(dimension, name='input')]
-    cond = Ff.ConditionNode(dimension_condition, name='cond')
-    for k in range(num_layers):
-        nodes.append(Ff.Node(nodes[-1],
-                          Fm.GLOWCouplingBlock,
-                          {'subnet_constructor':subnet_fc, 'clamp':1.6},
-                          conditions = cond,
-                          name=F'coupling_{k}'))
-        nodes.append(Ff.Node(nodes[-1],
-                          Fm.PermuteRandom,
-                          {'seed':(k+1)},
-                          name=F'permute_flow_{k}'))
-    nodes.append(Ff.OutputNode(nodes[-1], name='output'))
-
-    model = Ff.ReversibleGraphNet(nodes+[cond], verbose=False).to(DEVICE)
-    return model
 
