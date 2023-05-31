@@ -1,15 +1,15 @@
 # This code belongs to the paper
 #
-# F. Altekrüger, A. Denker, P. Hagemann, J. Hertrich, P. Maass and G. Steidl.
-# PatchNR: Learning from Small Data by Patch Normalizing Flow Regularization
-# ArXiv Preprint#2205.12021
+# F. Altekrüger, A. Denker, P. Hagemann, J. Hertrich, P. Maass and G. Steidl (2023).
+# PatchNR: Learning from Very Few Images by Patch Normalizing Flow Regularization.
+# Inverse Problems, vol. 39, no. 6.
 #
 # Please cite the paper, if you use the code.
 # The functions are adapted from 
 # 
-# J. Hertrich, A. Houdard and C. Redenbach. 
+# J. Hertrich, A. Houdard and C. Redenbach (2022). 
 # Wasserstein Patch Prior for Image Superresolution. 
-# ArXiv Preprint#2109.12880
+# IEEE Transactions on Computational Imaging.
 # (https://github.com/johertrich/Wasserstein_Patch_Prior)
 # 
 # and 

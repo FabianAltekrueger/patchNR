@@ -1,6 +1,6 @@
 # PatchNR: Learning from Small Data by Patch Normalizing Flow Regularization
 
-This code belongs to the paper [1] available at https://arxiv.org/abs/2205.12021. Please cite the paper, if you use this code.
+This code belongs to the paper [1] available at https://doi.org/10.1088/1361-6420/acce5e (open access). Please cite the paper, if you use this code.
 
 The repository contains an implementation of patchNRs as introduced in [1]. It contains scripts for reproducing the numerical example CT imaging in Section 4.1 and Superresolution in Section 4.2.
 
@@ -47,8 +47,8 @@ The scripts `patchNR_zeroshot.py` and `patchNR_zeroshot_material.py` are the imp
 ## 3. REFERENCES
 
 [1] F. Altekrüger, A. Denker, P. Hagemann, J. Hertrich, P. Maass and G. Steidl.  
-PatchNR: Learning from Small Data by Patch Normalizing Flow Regularization.   
-ArXiv Preprint#2205.12021
+PatchNR: Learning from Very Few Images by Patch Normalizing Flow Regularization.   
+Inverse Problems, vol. 39, no. 6, 2023
 
 [2] J. Leuschner, M. Schmidt, D. O. Baguer and P. Maass.  
 LoDoPaB-CT, a benchmark dataset for low-dose computed tomography reconstruction.  
